@@ -7,14 +7,14 @@ from matplotlib import pyplot as plt
 import numpy as np
 # Pie Chart
 def barchart(request):
-    objects = ['12/10/2019','12/11/2020','15/10/2020']
+    objects = ['morgen','eftermiddag','ferie']
     y_pos = np.arange(len(objects))
-    qty = [10,20,25]
+    qty = [29,46,39]
     plt.bar(y_pos, qty, align='center', alpha=0.5)
     plt.xticks(y_pos, objects)
-    plt.ylabel('Quantity')
-    plt.title('Sales')
-    plt.savefig('media/barchart.png')
+    plt.ylabel('modul')
+    plt.title('antal')
+    plt.savefig('image/barchart.png')
     return render(request,'barchart.html')
 
 
