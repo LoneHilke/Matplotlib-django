@@ -23,12 +23,22 @@ def barchart(request):
 # Pie Chart
 def piechart(request):
     # Pie chart, where the slices will be ordered and plotted counter-clockwise:
+
+    # 2 dele
     #labels = 'Sale', 'Purchase'
     #sizes = [random.randint(10,30), random.randint(30,50)]
-    labels = 'morgen','eftermiddag','ferie'
-    sizes = [random.randint(9,29), random.randint(26,46), random.randint(19,39)]
-    explode = (0, 0.1, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+    #explode = (0.1, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+
+    # 3 dele
+    #labels = 'morgen','eftermiddag','ferie'
+    #sizes = [random.randint(9,29), random.randint(26,46), random.randint(19,39)]
+    #explode = (0, 0.1, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
     #explode = (29,46,39)
+
+    # 4 dele
+    labels = 'gruppe 1','gruppe 2','gruppe 3', 'samlet'
+    sizes = [random.randint(4,5), random.randint(5,6), random.randint(3,4), random.randint(12,14)]
+    explode = (0, 0, 0.1, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
     fig1, ax1 = plt.subplots()
     
